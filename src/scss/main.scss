@@ -7,6 +7,8 @@
 @import "_projects";
 @import "_realized";
 @import "_contact";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 html {
   box-sizing: border-box;
@@ -21,6 +23,7 @@ html {
 body {
   color: $yellow;
   background: $violet;
+  font-family: 'Cormorant', serif;
 }
 
 .nav {
@@ -42,6 +45,7 @@ body {
     margin-bottom: -8vh;
   }
   &__link {
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
   }
   &__button {
