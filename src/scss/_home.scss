@@ -1,7 +1,13 @@
 .header {
     width: 100%;
     height: 80vh;
-    background: url("../assets/img/header.jpg");
+    margin-top: 106.25px;
+    background: url("../assets/img/header.jpg") no-repeat center;
     background-size: cover;
-    background-position: 10%;
+    &__title {
+      color: $textPurple;
+      font-size: 2.6rem;
+      margin-left: 60%;
+      padding-top: 5%;
+    }
   }
