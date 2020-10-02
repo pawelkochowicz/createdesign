@@ -1,0 +1,13 @@
+@mixin titles {
+    display: flex;
+    align-items: center;
+    color: $textPurple;
+    background-color: $backgroundTitle;
+    width: 100%;
+    height: 100px;
+    &--wright {
+      font-weight: 300;
+      font-size: 2rem;
+  padding-left: 20vw;
+    }
+}
