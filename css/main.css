@@ -5,7 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Cormorant&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 html {
   line-height: 1.15;
@@ -309,12 +309,58 @@ template {
 [hidden] {
   display: none; }
 
+.content__description {
+  margin: 9vh 18vw 9vh 18vw;
+  text-align: center;
+  font-size: 1.2rem; }
+
+.content__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 7vh;
+  background-color: #BD9593; }
+  .content__link--wright {
+    color: white;
+    font-size: 1.6rem;
+    text-decoration: none; }
+
+.content__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #AB5D55;
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 100px; }
+  .content__title--wright {
+    font-weight: 300;
+    font-size: 2rem;
+    padding-left: 20vw; }
+
 .header {
   width: 100%;
-  height: 80vh;
-  background: url("../assets/img/header.jpg");
-  background-size: cover;
-  background-position: 10%; }
+  height: 88vh;
+  margin-top: 12vh;
+  background: url("../assets/img/header.jpg") no-repeat center;
+  background-size: cover; }
+  .header__title {
+    color: #AB5D55;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.6rem;
+    margin-left: 55%;
+    padding-top: 5%; }
 
 .nav {
   width: 100%;
@@ -334,14 +380,14 @@ template {
         -ms-flex-align: center;
             align-items: center;
     margin: 0;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 9vw;
+    padding-right: 9vw;
     background-color: white; }
   .nav__logo {
     height: 30vh;
     width: auto;
-    margin-top: -8vh;
-    margin-bottom: -8vh; }
+    margin-top: -9vh;
+    margin-bottom: -9vh; }
   .nav__link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -352,8 +398,8 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 120px;
-    height: 31px;
+    width: 8vw;
+    height: 4vh;
     font-family: "Montserrat", sans-serif;
     font-size: 1.1rem;
     text-decoration: none;
@@ -384,8 +430,8 @@ html {
           box-sizing: inherit; }
 
 body {
-  color: #F9C802;
-  background: #000;
-  font-family: 'Cormorant', serif; }
+  color: #585858;
+  font-family: 'Cormorant', serif;
+  letter-spacing: 1px; }
 
 /*# sourceMappingURL=main.css.map */
