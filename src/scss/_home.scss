@@ -18,10 +18,24 @@
     }
   }
   &__title {
-@include titles
+    @include titles;
+  }
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-bottom: 9vh;
+    &--photo {
+      display: flex;
+      justify-self: center;
+      align-self: center;
+      width: 450px;
+      height: auto;
+    }
   }
 }
-
 
 .header {
   width: 100%;
@@ -34,7 +48,7 @@
     text-align: center;
     font-weight: 300;
     font-size: 2.6rem;
-    margin-left: 55%;
-    padding-top: 5%;
+    margin-left: 45%;
+    padding-top: 7%;
   }
 }
