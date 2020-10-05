@@ -12,3 +12,15 @@
   padding-left: 20vw;
     }
 }
+
+@mixin photo {
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    &--photo{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 450px;
+    height: auto;
+    }
+}
