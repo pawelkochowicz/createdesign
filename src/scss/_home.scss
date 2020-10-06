@@ -21,29 +21,27 @@
     @include titles;
   }
   &__gallery {
-    @include photo;
     display: grid;
+    @include photo;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     margin-bottom: 9vh;
   }
   &__instagram {
-    display: flex;
-    align-items: center;
     width: 100%;
-    height: 60px;
     margin: 9vh 0 9vh 0;
     font-weight: 300;
     font-size: 2rem;
-    padding-left: 10vw;
     &--logo {
       display: flex;
-      justify-content: center;
+      align-items: center;
       color: $textPurple;
       text-decoration: none;
+      text-align: center;
+      padding-left: 10vw;
+
       &:before {
         content: "";
-        display: inline-block;
         background: url("../assets/img/insta_icon60x60.svg") no-repeat;
         width: 60px;
         height: 60px;
@@ -68,3 +66,12 @@
     padding-top: 7%;
   }
 }
+
+.instagram__gallery {
+    display: grid;
+    @include photo;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin-bottom: 9vh;
+    margin-top: 9vh;
+  }

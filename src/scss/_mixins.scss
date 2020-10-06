@@ -4,7 +4,7 @@
     color: $textPurple;
     background-color: $backgroundTitle;
     width: 100%;
-    height: 14vh;
+    height: 14vh;   
     margin: 9vh 0 9vh 0;
     &--wright {
       font-weight: 300;
@@ -16,7 +16,7 @@
 @mixin photo {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    &--photo{
+    &--photo {
     display: flex;
     justify-self: center;
     align-self: center;
