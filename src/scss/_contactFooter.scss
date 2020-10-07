@@ -1,0 +1,53 @@
+.contact {
+    &__title {
+        @include titles;
+    }
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin: 0 0 9vw 18vw;
+    }
+    &__email {
+        grid-area: 1 / 1 / 2 / 2;
+        &--link {
+            text-decoration: none;
+            color: $textPurple;
+            font-size: 1.2rem;
+        }
+    }
+    &__telephone {
+        grid-area: 2 / 1 / 3 / 2;
+        &--color {
+            color: $textPurple;
+            font-size: 1.2rem;
+        }
+    }
+    &__instagram {
+        display: flex;
+        align-items: center;    
+        grid-area: 1 / 2 / 2 / 3;
+        &--link {
+            @include contactLinks;
+            background: url("../assets/img/inst_icon30x30.svg") no-repeat;
+        }
+    }
+    &__facebook {
+        display: flex;
+        align-items: center;
+        grid-area: 2 / 2 / 3 / 3;
+        &--link {
+            @include contactLinks;
+            background: url("../assets/img/fb_icon30x30.svg") no-repeat;
+        }
+    }
+    &__pinterest {
+        display: flex;
+        align-items: center;
+        grid-area: 3 / 2 / 4 / 3;
+        &--link {
+            @include contactLinks;
+            background: url("../assets/img/pinterest_icon30x30.svg") no-repeat;
+        }
+    }
+}
