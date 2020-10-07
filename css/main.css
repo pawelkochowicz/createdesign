@@ -505,7 +505,7 @@ template {
   grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[3];
   grid-template-rows: repeat(3, 1fr);
-  margin: 0 0 9vw 18vw; }
+  margin: 0 0 5vw 18vw; }
 
 .contact__email {
   -ms-grid-row: 1;
@@ -599,6 +599,22 @@ template {
       width: 30px;
       height: 30px;
       margin-right: 3vw; }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 70px; }
+  .footer__description {
+    font-size: 1.2rem; }
 
 html {
   -webkit-box-sizing: border-box;
