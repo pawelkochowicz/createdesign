@@ -365,7 +365,7 @@ template {
     justify-self: center;
     -ms-flex-item-align: center;
         align-self: center;
-    width: 450px;
+    max-width: 30vw;
     height: auto; }
 
 .content__instagram {
@@ -423,7 +423,7 @@ template {
     justify-self: center;
     -ms-flex-item-align: center;
         align-self: center;
-    width: 450px;
+    max-width: 30vw;
     height: auto; }
 
 .nav {
