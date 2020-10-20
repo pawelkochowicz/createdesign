@@ -1,2 +1,16 @@
 @import "_variables";
 @import "_mixins";
+
+.motto {
+    background-color: $backgroundTitle;
+    color: $textPurple;
+    font-size: 3rem;
+    &__description {
+        padding: 3vh 10vw 2vh 10vw;
+        &--author {
+            display: block;
+            font-size: 2rem;
+            padding: 3vh 0 3vh 80%;
+        }
+    }
+}
