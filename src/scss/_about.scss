@@ -6,7 +6,7 @@
     color: $textPurple;
     font-size: 3rem;
     &__description {
-        padding: 3vh 10vw 2vh 10vw;
+        padding: 5vh 10vw 2vh 10vw;
         &--author {
             display: block;
             font-size: 2rem;
@@ -19,7 +19,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr;
-    padding: 2vh 0 2vh 0;
+    padding: 2vh 0 6vh 0;
 }
 
 .aboutMe {
@@ -43,7 +43,7 @@
     justify-content: center;
     align-items: center;
     &__photo {
-        width: 60%;
+        width: 70%;
         height: auto;
     }
 }
