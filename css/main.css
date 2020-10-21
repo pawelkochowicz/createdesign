@@ -431,7 +431,7 @@ template {
   color: #AB5D55;
   font-size: 3rem; }
   .motto__description {
-    padding: 3vh 10vw 2vh 10vw; }
+    padding: 5vh 10vw 2vh 10vw; }
     .motto__description--author {
       display: block;
       font-size: 2rem;
@@ -444,7 +444,7 @@ template {
   grid-template-columns: 50% 50%;
   -ms-grid-rows: 1fr;
   grid-template-rows: 1fr;
-  padding: 2vh 0 2vh 0; }
+  padding: 2vh 0 6vh 0; }
 
 .aboutMe {
   padding: 1vh 2vw 1vh 2vw;
@@ -479,7 +479,7 @@ template {
       -ms-flex-align: center;
           align-items: center; }
   .portrait__photo {
-    width: 60%;
+    width: 70%;
     height: auto; }
 
 .freeSpace {
