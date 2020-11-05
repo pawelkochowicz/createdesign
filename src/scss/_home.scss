@@ -26,6 +26,10 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     margin-bottom: 9vh;
+    &--link {
+      display: flex;
+      position: relative;
+    }
   }
   &__instagram {
     width: 100%;
@@ -68,13 +72,24 @@
 }
 
 .instagram__gallery {
-    display: grid;
-    @include photo;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    margin-bottom: 9vh;
-    margin-top: 9vh;
-  }
+  display: grid;
+  @include photo;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  margin-bottom: 9vh;
+  margin-top: 9vh;
+}
 
 
- 
+.gallery__title {
+  // display: none;
+  color: #ab5d55;
+  font-size: 1.3rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  // &--visible {
+  //   display: inline;
+  // }
+}

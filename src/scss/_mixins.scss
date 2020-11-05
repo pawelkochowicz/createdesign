@@ -20,6 +20,13 @@
     align-self: center;
     max-width: 30vw;
     height: auto;
+    transition: 0.3s;
+    z-index: +1;
+    &:hover {
+        opacity: 0.3;
+        transition: all 0.3s linear;
+        // z-index: -1;
+    }
     }
 }
 
