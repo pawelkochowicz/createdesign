@@ -82,14 +82,11 @@
 
 
 .gallery__title {
-  // display: none;
   color: #ab5d55;
-  font-size: 1.3rem;
+  font-size: 2rem;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  // &--visible {
-  //   display: inline;
-  // }
+  text-align: center;
 }
