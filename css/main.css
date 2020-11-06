@@ -372,7 +372,7 @@ template {
     transition: 0.3s;
     z-index: +1; }
     .content__gallery--photo:hover {
-      opacity: 0.3;
+      opacity: 0.2;
       -webkit-transition: all 0.3s linear;
       -o-transition: all 0.3s linear;
       transition: all 0.3s linear; }
@@ -444,20 +444,21 @@ template {
     transition: 0.3s;
     z-index: +1; }
     .instagram__gallery--photo:hover {
-      opacity: 0.3;
+      opacity: 0.2;
       -webkit-transition: all 0.3s linear;
       -o-transition: all 0.3s linear;
       transition: all 0.3s linear; }
 
 .gallery__title {
   color: #ab5d55;
-  font-size: 1.3rem;
+  font-size: 2rem;
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
+          transform: translate(-50%, -50%);
+  text-align: center; }
 
 .motto {
   background-color: #f9f9f9;
