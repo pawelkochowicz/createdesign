@@ -12,6 +12,22 @@
         padding-left: 9vw;
         padding-right: 9vw;
         background-color: white;
+        @media (max-width: 1200px) {
+            display: none;
+            flex-direction: column;
+            &--visible {
+              display: block;
+              font-size: 16px;
+              line-height: 2em;
+              text-align: center;
+              margin: 0;
+              padding: 0;
+              border: 0;
+              list-style-position: inside;
+              margin-top: 85px;
+              flex-direction: column;
+            }
+          }
     }
     &__logo {
         height: 30vh;
@@ -30,6 +46,19 @@
         text-decoration: none;
         color: #ab5d55;
     }
+    &__switcher {
+        position: fixed;
+        font-size: 2rem;
+        background-color: white;
+        line-height: 2em;
+        border: 0;
+        right: 65px;
+        top: 2vh;
+        cursor: pointer;
+        @media (min-width: 1201px) {
+            display: none;
+        }
+    }
     &__button {
         transition: all 0.3s;
         list-style-type: none;
@@ -39,7 +68,7 @@
             border: 2px solid rgba($color: #6b4964, $alpha: 0.9);
         }
         &--active {
-            border: 2px solid rgba($color: #6b4964, $alpha: 0.9);    
+            border: 2px solid rgba($color: #6b4964, $alpha: 0.9);
         }
     }
 }
