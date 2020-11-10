@@ -4,29 +4,32 @@
     color: $textPurple;
     background-color: $backgroundTitle;
     width: 100%;
-    height: 14vh;   
+    height: 14vh;
     margin: 9vh 0 9vh 0;
-      font-weight: 300;
-      font-size: 2rem;
-  padding-left: 20vw;
+    font-weight: 300;
+    font-size: 2rem;
+    padding-left: 20vw;
 }
 
 @mixin photo {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     &--photo {
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    max-width: 30vw;
-    height: auto;
-    transition: 0.3s;
-    z-index: +1;
-    &:hover {
-        opacity: 0.2;
-        transition: all 0.3s linear;
-        // z-index: -1;
-    }
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        max-width: 30vw;
+        height: auto;
+        transition: 0.3s;
+        z-index: +1;
+        &:hover {
+            opacity: 0.2;
+            transition: all 0.3s linear;
+            // z-index: -1;
+        }
+        @media (max-width: 600px) {
+            max-width: 90vw;
+        }
     }
 }
 
@@ -39,7 +42,6 @@
         content: "";
         width: 30px;
         height: 30px;
-        margin-right: 3vw;    
+        margin-right: 3vw;
     }
-
 }
