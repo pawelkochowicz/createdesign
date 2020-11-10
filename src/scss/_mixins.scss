@@ -27,7 +27,7 @@
             transition: all 0.3s linear;
             // z-index: -1;
         }
-        @media (max-width: 600px) {
+        @media (max-width: 700px) {
             max-width: 90vw;
         }
     }
@@ -43,5 +43,14 @@
         width: 30px;
         height: 30px;
         margin-right: 3vw;
+        @media (max-width: 1100px) {
+            margin-right: 4vw;
+        }
+        @media (max-width:820px) {
+            margin-right: 5vw;
+        }
+        @media (max-width:700px) {
+            margin-right: 10vw;
+        }
     }
 }
