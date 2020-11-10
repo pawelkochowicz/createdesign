@@ -376,6 +376,17 @@ template {
       -webkit-transition: all 0.3s linear;
       -o-transition: all 0.3s linear;
       transition: all 0.3s linear; }
+    @media (max-width: 600px) {
+      .content__gallery--photo {
+        max-width: 90vw; } }
+  @media (max-width: 900px) {
+    .content__gallery {
+      -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) {
+    .content__gallery {
+      -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr); } }
   .content__gallery--link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -418,6 +429,9 @@ template {
     font-size: 2.6rem;
     margin-left: 45%;
     padding-top: 7%; }
+    @media (max-width: 700px) {
+      .header__title {
+        margin: 0; } }
 
 .instagram__gallery {
   display: -ms-grid;
@@ -448,6 +462,9 @@ template {
       -webkit-transition: all 0.3s linear;
       -o-transition: all 0.3s linear;
       transition: all 0.3s linear; }
+    @media (max-width: 600px) {
+      .instagram__gallery--photo {
+        max-width: 90vw; } }
 
 .gallery__title {
   color: #ab5d55;
@@ -605,6 +622,9 @@ template {
     font-size: 1.1rem;
     text-decoration: none;
     color: #ab5d55; }
+    @media (max-width: 1200px) {
+      .nav__link {
+        width: 100%; } }
   .nav__switcher {
     position: fixed;
     font-size: 2rem;
@@ -630,6 +650,26 @@ template {
       border: 2px solid rgba(107, 73, 100, 0.9); }
     .nav__button--active {
       border: 2px solid rgba(107, 73, 100, 0.9); }
+    @media (max-width: 1200px) {
+      .nav__button {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 45vw;
+        margin-left: 50vw;
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+        -webkit-transform: translate(-50%, 0);
+            -ms-transform: translate(-50%, 0);
+                transform: translate(-50%, 0); } }
 
 .contact__title {
   display: -webkit-box;
