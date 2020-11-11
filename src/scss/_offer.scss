@@ -4,5 +4,8 @@
     align-items: center;
     &__image {
         width: 35%;
+        @media (max-width: 1000px) {
+            width: 65%;
+        }
     }
 }
