@@ -26,10 +26,10 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     margin-bottom: 9vh;
-    @media (max-width:900px) {
+    @media (max-width: 900px) {
       grid-template-columns: repeat(2, 1fr);
     }
-    @media (max-width:700px) {
+    @media (max-width: 700px) {
       grid-template-columns: repeat(1, 1fr);
     }
 
@@ -90,7 +90,6 @@
   margin-top: 9vh;
 }
 
-
 .gallery__title {
   color: #ab5d55;
   font-size: 2rem;
@@ -99,4 +98,8 @@
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  @media (max-width: 600px) {
+    font-weight: 700;
+    background: rgba($color: #ffffff, $alpha: 0.7);
+  }
 }
