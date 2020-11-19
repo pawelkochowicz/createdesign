@@ -36,6 +36,11 @@
     &--link {
       display: flex;
       position: relative;
+      align-self: center;
+      justify-self: center;
+      @media (max-width: 600px) {
+        margin-bottom: 5rem;
+      }
     }
   }
   &__instagram {
@@ -101,5 +106,7 @@
   @media (max-width: 600px) {
     font-weight: 700;
     background: rgba($color: #ffffff, $alpha: 0.7);
+    top: 110%;
+    width: 100%;
   }
 }
