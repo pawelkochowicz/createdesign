@@ -394,7 +394,13 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    position: relative; }
+    position: relative;
+    -ms-flex-item-align: center;
+        align-self: center;
+    justify-self: center; }
+    @media (max-width: 600px) {
+      .content__gallery--link {
+        margin-bottom: 5rem; } }
 
 .content__instagram {
   width: 100%;
@@ -485,7 +491,9 @@ template {
   @media (max-width: 600px) {
     .gallery__title {
       font-weight: 700;
-      background: rgba(255, 255, 255, 0.7); } }
+      background: rgba(255, 255, 255, 0.7);
+      top: 110%;
+      width: 100%; } }
 
 .motto {
   background-color: #f9f9f9;
@@ -563,22 +571,31 @@ template {
   width: 100%;
   height: 2rem; }
 
-.content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .content__image {
-    width: 35%; }
-    @media (max-width: 1000px) {
-      .content__image {
-        width: 65%; } }
+.offer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[1];
+  grid-template-rows: repeat(1, 1fr);
+  width: 100%; }
+  @media (max-width: 900px) {
+    .offer {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  .offer__image {
+    width: 90%;
+    margin: 5px; }
+    @media (max-width: 900px) {
+      .offer__image {
+        width: 65%;
+        margin-top: 5vh;
+        margin-bottom: 5vh; } }
+  .offer__description {
+    padding: 4vw;
+    font-size: 1.2rem; }
 
 .content__gallery--realizations {
   -ms-grid-columns: (1fr)[3];
