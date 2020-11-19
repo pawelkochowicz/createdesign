@@ -617,7 +617,8 @@ template {
   z-index: +2;
   width: 100%;
   position: fixed;
-  top: 0; }
+  top: 0;
+  height: 12vh; }
   @media (max-width: 1200px) {
     .nav {
       position: absolute; } }
@@ -634,6 +635,7 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 12vh;
     margin: 0;
     padding-left: 9vw;
     padding-right: 9vw;
@@ -644,7 +646,8 @@ template {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column; }
+                flex-direction: column;
+        height: auto; }
         .nav__menu--visible {
           display: block;
           font-size: 16px;
@@ -660,6 +663,11 @@ template {
               -ms-flex-direction: column;
                   flex-direction: column; } }
   .nav__logo {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
     height: 30vh;
     width: auto;
     margin-top: -9vh;
@@ -699,6 +707,7 @@ template {
       .nav__switcher {
         position: absolute; } }
   .nav__button {
+    z-index: 1;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
@@ -711,6 +720,10 @@ template {
       border: 2px solid rgba(107, 73, 100, 0.9); }
     .nav__button--active {
       border: 2px solid rgba(107, 73, 100, 0.9); }
+    .nav__button--rightMargin {
+      margin-right: 6vw; }
+    .nav__button--leftMargin {
+      margin-left: 6vw; }
     @media (max-width: 1200px) {
       .nav__button {
         display: -webkit-box;
