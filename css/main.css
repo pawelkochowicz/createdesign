@@ -639,7 +639,7 @@ template {
   position: fixed;
   top: 0;
   height: 12vh; }
-  @media (max-width: 1200px) {
+  @media (max-width: 1023px) {
     .nav {
       position: absolute; } }
   .nav__menu {
@@ -660,7 +660,7 @@ template {
     padding-left: 9vw;
     padding-right: 9vw;
     background-color: white; }
-    @media (max-width: 1200px) {
+    @media (max-width: 1023px) {
       .nav__menu {
         display: none;
         -webkit-box-orient: vertical;
@@ -708,7 +708,17 @@ template {
     font-size: 1.1rem;
     text-decoration: none;
     color: #ab5d55; }
-    @media (max-width: 1200px) {
+    .nav__link:hover {
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      color: #6b4964; }
+    .nav__link--active {
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      color: #BD9593; }
+    @media (max-width: 1023px) {
       .nav__link {
         width: 100%; } }
   .nav__switcher {
@@ -720,10 +730,10 @@ template {
     right: 65px;
     top: 2vh;
     cursor: pointer; }
-    @media (min-width: 1201px) {
+    @media (min-width: 1024px) {
       .nav__switcher {
         display: none; } }
-    @media (max-width: 1200px) {
+    @media (max-width: 1023px) {
       .nav__switcher {
         position: absolute; } }
   .nav__button {
@@ -731,20 +741,12 @@ template {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
-    list-style-type: none;
-    border: 2px solid rgba(193, 166, 181, 0.9); }
-    .nav__button:hover {
-      -webkit-transition: all 0.3s;
-      -o-transition: all 0.3s;
-      transition: all 0.3s;
-      border: 2px solid rgba(107, 73, 100, 0.9); }
-    .nav__button--active {
-      border: 2px solid rgba(107, 73, 100, 0.9); }
+    list-style-type: none; }
     .nav__button--rightMargin {
       margin-right: 6vw; }
     .nav__button--leftMargin {
       margin-left: 6vw; }
-    @media (max-width: 1200px) {
+    @media (max-width: 1023px) {
       .nav__button {
         display: -webkit-box;
         display: -ms-flexbox;
